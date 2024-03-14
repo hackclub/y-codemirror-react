@@ -4,6 +4,9 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
+  "engines": {
+    "node": "21.x"
+  },
   "dependencies": {
     "codemirror": "5.61.0",
     "randomize-hex": "1.0.7",
