@@ -73,16 +73,11 @@ const Editor = () => {
           <input
             readOnly
             type="text"
-            value={`http://localhost:3000/${id}`}
-            size="50"
+            value={`${process.env.REACT_APP_WEBSITE_URL}/${id}`}
+            size="60"
             id="myInput"
           />
           <button onClick={copy}>copy</button> <br />
-          <p style={{ color: "red" }}>
-            btw you can change the localhost to your local ip address(ex:
-            192.123.4.567) to access this from other devices, but be sure to
-            include the :3000 port
-          </p>
           <br />
           <p style={{ display: "inline" }}>You can rename yourself here: </p>
           <input
